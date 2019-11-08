@@ -1,69 +1,132 @@
+/**
+ * This class is creating for generate event number
+ */
 package com.epam;
+
+/**
+ * EvenNumber Class
+ * generate even numbers
+ */
 
 public class EvenNumber {
 
+    /**
+     * private variable
+     *
+     * minBound - left border
+     * maxBound - left border
+     */
+
     private int minBound;
     private int maxBound;
+    final int usualMaxBound = 100;
 
-    public EvenNumber(){
+    /**
+     * empty constructor
+     */
+
+    public EvenNumber() {
         this.minBound = 1;
-        this.maxBound = 100;
+        this.maxBound = usualMaxBound;
     }
 
-    public EvenNumber(int minBound, int maxBound){
+    /**
+     * Another constructor
+     *
+     * @param minBound left border
+     * @param maxBound right border
+     */
+    public EvenNumber(int minBound, int maxBound) {
         this.minBound = minBound;
         this.maxBound = maxBound;
     }
 
+    /**
+     * Method to get minBound
+     *
+     * @return minBound
+     */
     public int getMinBound() {
         return minBound;
     }
+
+    /**
+     * Method to set minBound
+     *
+     * @param minBound - left border
+     */
 
     public void setMinBound(int minBound) {
         this.minBound = minBound;
     }
 
+    /**
+     * Method to get maxBound
+     *
+     * @return maxBound
+     */
     public int getMaxBound() {
         return maxBound;
     }
+
+    /**
+     * Method to set maxBound
+     *
+     * @param maxBound - right border
+     */
 
     public void setMaxBound(int maxBound) {
         this.maxBound = maxBound;
     }
 
-    public void getEvenNumbersStraight(){
-        for (int i = this.minBound; i <= this.maxBound; i++){
-            if (i%2 == 0){
+    /**
+     * generate event numbers
+     * from minBound to maxBound
+     */
+    public void getEvenNumbersStraight() {
+        for (int i = this.minBound; i <= this.maxBound; i++) {
+            if (i % 2 == 0) {
                 System.out.println(i);
             }
         }
     }
 
-    public void getEvenNumbersReverse(){
-        for (int i = maxBound; i >= minBound; i--){
-            if (i%2 == 0){
+    /**
+     * generate event numbers
+     * from minBound to maxBound
+     * but printing reverse
+     */
+
+    public void getEvenNumbersReverse() {
+        for (int i = maxBound; i >= minBound; i--) {
+            if (i % 2 == 0) {
                 System.out.println(i);
             }
         }
     }
 
-    public int getSum(){
+    /**
+     * @return sum of all event numbers
+     */
+    public int getSum() {
         int sum = 0;
-        for (int i = minBound; i <= maxBound; i++){
-            if (i%2 == 0){
+        for (int i = minBound; i <= maxBound; i++) {
+            if (i % 2 == 0) {
                 sum += i;
             }
         }
         return sum;
     }
 
-    public int getMaxEventNumber(){
+    /**
+     * @return max number from all event number
+     */
+    public int getMaxEventNumber() {
         int max;
-        if (maxBound%2 ==0 ){
+        if (maxBound % 2 == 0) {
             max = maxBound;
-        }
-        else {
-            max = maxBound-1;
+        } else {
+            max = maxBound - 1;
         }
         return max;
     }
