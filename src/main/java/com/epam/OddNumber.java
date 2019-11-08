@@ -38,45 +38,6 @@ public class OddNumber {
         this.maxBound = maxBound;
     }
 
-
-    /**
-     * Method to get minBound
-     *
-     * @return minBound
-     */
-    public int getMinBound() {
-        return minBound;
-    }
-
-    /**
-     * Method to set minBound
-     *
-     * @param minBound - left border
-     */
-
-    public void setMinBound(int minBound) {
-        this.minBound = minBound;
-    }
-
-
-    /**
-     * Method to get maxBound
-     *
-     * @return maxBound
-     */
-    public int getMaxBound() {
-        return maxBound;
-    }
-
-    /**
-     * Method to set maxBound
-     *
-     * @param maxBound - right border
-     */
-    public void setMaxBound(int maxBound) {
-        this.maxBound = maxBound;
-    }
-
     /**
      * generate odd numbers
      *

@@ -48,25 +48,6 @@ public class Fibonacci {
     }
 
     /**
-     * Method to get n
-     *
-     * @return n
-     */
-
-    public int getN() {
-        return n;
-    }
-
-    /**
-     * Method to set n
-     *
-     * @param n - size of set
-     */
-    public void setN(int n) {
-        n = n;
-    }
-
-    /**
      * generate Fibonacci numbers
      */
 
